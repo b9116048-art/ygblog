@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>内网穿透折腾记</title><link rel="stylesheet" href="../style.css"></head>
+<body><header><h1>YG 的小站</h1></header><nav><a href="../index.html">首页</a><a href="../about.html">关于</a></nav>
+<article><h1>把手机变成公开服务器</h1><div class="meta">2026-10-03</div>
+<p>今天我把手机变成了一台"服务器"——公网上就能打开我手机里的网页。</p>
+<p>方案（免费、无VPS、无需root）：</p>
+<pre>$ pkg install cloudflared
+$ cloudflared tunnel --url http://127.0.0.1:8080</pre>
+<p>它会打印一个 xxx.trycloudflare.com 地址，就是公网入口。</p>
+<p>坑：①国内连 api.trycloudflare.com 常超时，重试即可；②pkill -f 的匹配词别写进同一条命令，会把自己杀了；③快速隧道地址随机，重启就变。</p></article></body></html>
