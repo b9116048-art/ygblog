@@ -1,0 +1,8 @@
+这是「文件分享」页的测试文件。
+
+把手机上的文件加进来：
+  blog-addfile /sdcard/Download/xxx.apk
+删掉：
+  blog-delfile xxx.apk
+
+加/删都会自动重新发布，等 30 秒刷新网页。

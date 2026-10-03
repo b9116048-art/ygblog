@@ -31,3 +31,11 @@ article{animation:up .6s ease .15s both}
 pre{background:#222;color:#eee;padding:12px;border-radius:6px;overflow-x:auto;font-size:.86em;margin:10px 0}
 code{background:#e7e3dd;padding:1px 5px;border-radius:4px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+/* ---- 文件分享列表 ---- */
+a.file{display:flex;align-items:center;gap:12px;background:#fff;padding:13px 16px;margin:10px 0;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.08);text-decoration:none;color:inherit;animation:up .6s ease both;transition:transform .25s,box-shadow .25s}
+a.file:hover{transform:translateY(-4px);box-shadow:0 8px 22px rgba(0,0,0,.12)}
+a.file .fi{font-size:22px;flex:0 0 auto;line-height:1}
+a.file .fn{flex:1 1 auto;word-break:break-all;font-weight:600;min-width:0}
+a.file .fm{flex:0 0 auto;color:var(--muted);font-size:.78em;white-space:nowrap}
+.empty{color:var(--muted);text-align:center;padding:34px 0}
