@@ -1,5 +1,22 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>关于 - 小野猫的小站</title><link rel="stylesheet" href="style.css"></head>
-<body><header><h1>关于</h1></header><nav><a href="index.html">首页</a><a href="files.html">文件</a><a href="about.html">关于</a></nav>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>关于 - 小野猫的小站</title>
+<meta name="description" content="这个小站怎么来的：一台 OPPO 手机 + Termux + GitHub Pages，不花一分钱，也不需要服务器。">
+<link rel="canonical" href="https://b9116048-art.github.io/ygblog/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小野猫的小站">
+<meta property="og:title" content="关于 - 小野猫的小站">
+<meta property="og:description" content="一台手机 + Termux + GitHub Pages，没有服务器。">
+<meta property="og:url" content="https://b9116048-art.github.io/ygblog/about.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/ygblog/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=4"></head>
+<body><header><h1>关于</h1><p class="tag">一台手机，一个终端，一个公开的小站</p></header>
+<nav><a href="index.html">首页</a><a href="files.html">文件</a><a href="about.html" aria-current="page">关于</a></nav>
 <p>这博客在一台 OPPO 手机上用 Termux 写，推到 GitHub Pages 发布。不花一分钱，也不需要服务器。</p>
-<p>加文章：在 ~/blog/posts/ 放个 html，再在 index.html 加一行链接。</p>
-<footer>© 2026 YG</footer></body></html>
+<h2>怎么加文章</h2>
+<p>在手机的 Termux 里运行 <code>blog-new "标题" "摘要"</code>：它会生成文章文件，并自动在首页插好链接。</p>
+<p>写完正文之后运行 <code>blog-deploy</code> 发布。大约 1 分钟后线上生效。</p>
+<h2>怎么加文件</h2>
+<p>运行 <code>blog-addfile &lt;文件或文件夹&gt;</code>，它会复制进分享目录、刷新列表页并直接发布。</p>
+<footer>© <span class="yr">2026</span> 小野猫的小站 · Termux + GitHub Pages</footer>
+<script>document.querySelectorAll('.yr').forEach(function (e) { e.textContent = new Date().getFullYear(); });</script>
+</body></html>

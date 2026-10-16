@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://b9116048-art.github.io/ygblog/sitemap.xml

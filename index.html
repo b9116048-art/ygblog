@@ -1,11 +1,29 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小野猫的小站</title><link rel="stylesheet" href="style.css"></head>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小野猫的小站</title>
+<meta name="description" content="小野猫的个人小站：在手机上用 Termux 写的折腾记录、随想，以及一个公开的文件分享页。">
+<link rel="canonical" href="https://b9116048-art.github.io/ygblog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小野猫的小站">
+<meta property="og:title" content="小野猫的小站">
+<meta property="og:description" content="在手机上用 Termux 写的折腾记录、随想与文件分享。">
+<meta property="og:url" content="https://b9116048-art.github.io/ygblog/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/ygblog/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=4"></head>
 <body>
-<div class="boot"><span>&gt; booting  Little cat blog ...</span></div>
+<div class="boot" aria-hidden="true"><span>&gt; booting  Little cat blog ...</span></div>
 <header><h1>小野猫的小站</h1><p class="tag">一部跑在手机上的博客 · 现在住在 GitHub Pages</p></header>
-<nav><a href="index.html">首页</a><a href="files.html">文件</a><a href="about.html">关于</a></nav>
+<nav><a href="index.html" aria-current="page">首页</a><a href="files.html">文件</a><a href="about.html">关于</a></nav>
 <p>朋友们好。这里记我的折腾、随想和写的东西。</p>
 <h2>最近更新</h2>
-<a class="post-link" href="posts/penetrate.html"><div class="post"><h2>把手机变成公开服务器</h2><div class="date">2026-10-03</div><p>免费、无VPS、无root —— Cloudflare 快速隧道折腾记。</p></div></a>
-<a class="post-link" href="posts/hi.html"><div class="post"><h2>开张</h2><div class="date">2026-10-03</div><p>第一篇。这个博客本身就跑在手机上。</p></div></a>
-<footer>© 2026  Little cat · Termux + GitHub Pages</footer>
+<a class="post-link" href="posts/penetrate.html"><div class="post"><h2>把手机变成公开服务器</h2><div class="date"><time datetime="2026-10-03">2026-10-03</time></div><p>免费、无VPS、无root —— Cloudflare 快速隧道折腾记。</p></div></a>
+<a class="post-link" href="posts/hi.html"><div class="post"><h2>开张</h2><div class="date"><time datetime="2026-10-03">2026-10-03</time></div><p>第一篇。这个博客本身就跑在手机上。</p></div></a>
+<footer>© <span class="yr">2026</span> 小野猫的小站 · Termux + GitHub Pages</footer>
+<script>
+try {
+  var b = document.querySelector('.boot');
+  if (b && sessionStorage.getItem('booted')) b.style.display = 'none';
+  else try { sessionStorage.setItem('booted', '1'); } catch (e) {}
+} catch (e) {}
+document.querySelectorAll('.yr').forEach(function (e) { e.textContent = new Date().getFullYear(); });
+</script>
 </body></html>

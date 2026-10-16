@@ -1,9 +1,22 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>内网穿透折腾记</title><link rel="stylesheet" href="../style.css"></head>
-<body><header><h1>小野猫的小站</h1></header><nav><a href="../index.html">首页</a><a href="../files.html">文件</a><a href="../about.html">关于</a></nav>
-<article><h1>把手机变成公开服务器</h1><div class="meta">2026-10-03</div>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>把手机变成公开服务器 - 小野猫的小站</title>
+<meta name="description" content="免费、无 VPS、无需 root：用 Cloudflare 快速隧道把手机上的网页发布到公网。">
+<link rel="canonical" href="https://b9116048-art.github.io/ygblog/posts/penetrate.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="小野猫的小站">
+<meta property="og:title" content="把手机变成公开服务器">
+<meta property="og:description" content="免费、无 VPS、无需 root：用 Cloudflare 快速隧道把手机上的网页发布到公网。">
+<meta property="og:url" content="https://b9116048-art.github.io/ygblog/posts/penetrate.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/ygblog/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css?v=4"></head>
+<body><header><p class="brand">小野猫的小站</p></header><nav><a href="../index.html">首页</a><a href="../files.html">文件</a><a href="../about.html">关于</a></nav>
+<article><h1>把手机变成公开服务器</h1><div class="meta"><time datetime="2026-10-03">2026-10-03</time></div>
 <p>今天我把手机变成了一台"服务器"——公网上就能打开我手机里的网页。</p>
 <p>方案（免费、无VPS、无需root）：</p>
 <pre>$ pkg install cloudflared
 $ cloudflared tunnel --url http://127.0.0.1:8080</pre>
 <p>它会打印一个 xxx.trycloudflare.com 地址，就是公网入口。</p>
-<p>坑：①国内连 api.trycloudflare.com 常超时，重试即可；②pkill -f 的匹配词别写进同一条命令，会把自己杀了；③快速隧道地址随机，重启就变。</p></article></body></html>
+<p>坑：①国内连 api.trycloudflare.com 常超时，重试即可；②pkill -f 的匹配词别写进同一条命令，会把自己杀了；③快速隧道地址随机，重启就变。</p></article>
+<footer>© <span class="yr">2026</span> 小野猫的小站 · Termux + GitHub Pages</footer>
+<script>document.querySelectorAll('.yr').forEach(function (e) { e.textContent = new Date().getFullYear(); });</script>
+</body></html>
